@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (3.2.0)
+  - NoUnderscoreS (0.1.0)
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - Nimble (~> 3.0)
+  - NoUnderscoreS (from `../`)
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  NoUnderscoreS:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  NoUnderscoreS: bd6ce0c88662fb3b457a28a1791f3fc4261fc9f3
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+PODFILE CHECKSUM: db77b6bb4cc23ffc2245b9c02922fe23cf3f7be9
+
+COCOAPODS: 1.0.0
