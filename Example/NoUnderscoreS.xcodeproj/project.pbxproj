@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1BBE79EA1CF974250064A5F4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE79E91CF974250064A5F4 /* .gitignore */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		1BBE79F01CF9752A0064A5F4 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE79EF1CF9752A0064A5F4 /* ArrayTests.swift */; };
 		B0C3B3E7587E216FA8D9897E /* Pods_NoUnderscoreS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEA3BF7105FD46CFFF4E0D2 /* Pods_NoUnderscoreS_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1BBE79E91CF974250064A5F4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		1BBE79EF1CF9752A0064A5F4 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		2205CB11149AA16E93B3969C /* Pods-NoUnderscoreS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUnderscoreS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoUnderscoreS_Tests/Pods-NoUnderscoreS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5345DFC121ED94076CF46A89 /* NoUnderscoreS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NoUnderscoreS.podspec; path = ../NoUnderscoreS.podspec; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* NoUnderscoreS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoUnderscoreS_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8AEA3BF7105FD46CFFF4E0D2 /* Pods_NoUnderscoreS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoUnderscoreS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C89DA2ED5A5FC34555F169 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B9C6351C26419A8A4907EEF0 /* Pods-NoUnderscoreS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUnderscoreS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoUnderscoreS_Tests/Pods-NoUnderscoreS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				1BBE79EF1CF9752A0064A5F4 /* ArrayTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -222,7 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				1BBE79F01CF9752A0064A5F4 /* ArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
