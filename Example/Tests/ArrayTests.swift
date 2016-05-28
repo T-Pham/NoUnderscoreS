@@ -68,5 +68,28 @@ class ArrayTests: QuickSpec {
                 expect([1, 2, 3].initial(-1)) == [1, 2, 3]
             }
         }
+
+        describe("last n") {
+
+            it("returns last n elements") {
+                expect([1, 2, 3].last(2)) == [2, 3]
+            }
+
+            it("handles optional parameter case") {
+                expect([1, 2, 3].last()) == [3]
+            }
+
+            it("handles empty array case") {
+                expect([].last(1)) == [Int]()
+            }
+
+            it("handles n > count case") {
+                expect([1, 2, 3].last(4)) == [1, 2, 3]
+            }
+
+            it("handles n < 0 case") {
+                expect([1, 2, 3].last(-1)) == []
+            }
+        }
     }
 }

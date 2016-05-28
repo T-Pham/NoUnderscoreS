@@ -16,4 +16,9 @@ public extension Array {
         let _n = n ?? 1
         return self.first(self.count - _n)
     }
+
+    func last(n: Int? = nil) -> Array {
+        let _n = max(0, n ?? 1)
+        return Array(self.suffix(_n))
+    }
 }
