@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B29561B1CF991FE001F9FF5 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1B29561A1CF991FE001F9FF5 /* .travis.yml */; };
 		1BBE79EA1CF974250064A5F4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE79E91CF974250064A5F4 /* .gitignore */; };
 		1BBE79F01CF9752A0064A5F4 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE79EF1CF9752A0064A5F4 /* ArrayTests.swift */; };
 		B0C3B3E7587E216FA8D9897E /* Pods_NoUnderscoreS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEA3BF7105FD46CFFF4E0D2 /* Pods_NoUnderscoreS_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B29561A1CF991FE001F9FF5 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		1BBE79E91CF974250064A5F4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		1BBE79EF1CF9752A0064A5F4 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		2205CB11149AA16E93B3969C /* Pods-NoUnderscoreS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUnderscoreS_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoUnderscoreS_Tests/Pods-NoUnderscoreS_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				1BBE79E91CF974250064A5F4 /* .gitignore */,
+				1B29561A1CF991FE001F9FF5 /* .travis.yml */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B29561B1CF991FE001F9FF5 /* .travis.yml in Resources */,
 				1BBE79EA1CF974250064A5F4 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
