@@ -22,19 +22,27 @@ class ArrayTests: QuickSpec {
             }
 
             it("handles empty array case") {
-                expect([].first(1)) == Array<Int>()
+                expect([].first(1)) == [Int]()
+            }
+
+            it("handles n > count case") {
+                expect([1, 2, 3].first(4)) == [1, 2, 3]
             }
 
             it("handles n == 0 case") {
                 expect([1, 2, 3].first(0)) == []
             }
 
-            it("handles n == 1 case") {
-                expect([1, 2, 3].first(1)) == [1]
+            it("handles n < 0 case") {
+                expect([1, 2, 3].first(-1)) == []
             }
 
             it("handles n > count case") {
                 expect([1, 2, 3].first(4)) == [1, 2, 3]
+            }
+
+            it("handles n < 0 case") {
+                expect([1, 2, 3].first(-1)) == []
             }
         }
     }

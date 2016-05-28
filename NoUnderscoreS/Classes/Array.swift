@@ -8,6 +8,7 @@
 
 public extension Array {
     func first(n: Int) -> Array {
-        return Array(self.prefix(n))
+        let _n = max(0, n)
+        return Array(self.prefix(_n))
     }
 }
