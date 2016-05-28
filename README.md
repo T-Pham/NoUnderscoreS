@@ -5,11 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/NoUnderscoreS.svg?style=flat)](http://cocoapods.org/pods/NoUnderscoreS)
 [![Platform](https://img.shields.io/cocoapods/p/NoUnderscoreS.svg?style=flat)](http://cocoapods.org/pods/NoUnderscoreS)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+## Description
+NoUnderscoreS is a Swift port of [Underscore.js](http://underscorejs.org) but without the underscore.
 
 ## Installation
 
@@ -19,10 +16,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "NoUnderscoreS"
 ```
-
-## Author
-
-Thanh Pham, minhthanh@me.com
 
 ## License
 
