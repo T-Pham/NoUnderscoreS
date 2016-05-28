@@ -36,13 +36,32 @@ class ArrayTests: QuickSpec {
             it("handles n < 0 case") {
                 expect([1, 2, 3].first(-1)) == []
             }
+        }
+
+        describe("initial n") {
+
+            it("returns all but the last n elements") {
+                expect([1, 2, 3].initial(2)) == [1]
+            }
+
+            it("handles optional parameter case") {
+                expect([1, 2, 3].initial()) == [1, 2]
+            }
+
+            it("handles empty array case") {
+                expect([].initial(1)) == [Int]()
+            }
 
             it("handles n > count case") {
-                expect([1, 2, 3].first(4)) == [1, 2, 3]
+                expect([1, 2, 3].initial(4)) == []
+            }
+
+            it("handles n == 0 case") {
+                expect([1, 2, 3].initial(0)) == [1, 2, 3]
             }
 
             it("handles n < 0 case") {
-                expect([1, 2, 3].first(-1)) == []
+                expect([1, 2, 3].initial(-1)) == [1, 2, 3]
             }
         }
     }
