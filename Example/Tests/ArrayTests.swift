@@ -91,5 +91,32 @@ class ArrayTests: QuickSpec {
                 expect([1, 2, 3].last(-1)) == []
             }
         }
+
+        describe("rest n") {
+
+            it("returns all but first n elements") {
+                expect([1, 2, 3].rest(2)) == [3]
+            }
+
+            it("handles optional parameter case") {
+                expect([1, 2, 3].rest()) == [2, 3]
+            }
+
+            it("handles empty array case") {
+                expect([].rest(1)) == [Int]()
+            }
+
+            it("handles n > count case") {
+                expect([1, 2, 3].rest(4)) == []
+            }
+
+            it("handles n == 0 case") {
+                expect([1, 2, 3].rest(0)) == [1, 2, 3]
+            }
+
+            it("handles n < 0 case") {
+                expect([1, 2, 3].rest(-1)) == [1, 2, 3] //underscore.js returns [3]
+            }
+        }
     }
 }

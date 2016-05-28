@@ -7,18 +7,24 @@
 //
 
 public extension Array {
+
+    private func exec(n: Int?, f: Int -> ArraySlice<Element>) -> Array {
+        return Array(f(max(0, n ?? 1)))
+    }
+
     func first(n: Int? = nil) -> Array {
-        let _n = max(0, n ?? 1)
-        return Array(self.prefix(_n))
+        return exec(n, f: prefix)
     }
 
     func initial(n: Int? = nil) -> Array {
-        let _n = n ?? 1
-        return self.first(self.count - _n)
+        return exec(n, f: dropLast)
     }
 
     func last(n: Int? = nil) -> Array {
-        let _n = max(0, n ?? 1)
-        return Array(self.suffix(_n))
+        return exec(n, f: suffix)
+    }
+
+    func rest(n: Int? = nil) -> Array {
+        return exec(n, f: dropFirst)
     }
 }
