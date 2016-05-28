@@ -21,6 +21,10 @@ class ArrayTests: QuickSpec {
                 expect([1, 2, 3].first(2)) == [1, 2]
             }
 
+            it("handles optional parameter case") {
+                expect([1, 2, 3].first()) == [1]
+            }
+
             it("handles empty array case") {
                 expect([].first(1)) == [Int]()
             }
@@ -40,7 +44,7 @@ class ArrayTests: QuickSpec {
 
         describe("initial n") {
 
-            it("returns all but the last n elements") {
+            it("returns all but last n elements") {
                 expect([1, 2, 3].initial(2)) == [1]
             }
 
